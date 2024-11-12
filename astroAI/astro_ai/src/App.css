@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20px;
+  overflow: auto; /* Enables page to scroll */
+}
+
+.App {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  font-size: 16px;
+  color: #333;
+  overflow: auto;
+  min-height: 60vh; /* Ensure the height is enough to display all content */
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4a90e2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
+
+div {
+  margin-top: 3px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.react-markdown {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+form,
+div {
+  overflow: visible; /* Ensure both form and interpretation sections are fully visible */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}
