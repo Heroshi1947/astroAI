@@ -16,7 +16,7 @@ function App() {
     try {
       // Sending POST request to the backend (Groq API)
       const response = await axios.post(
-         `${process.env.REACT_APP_API_BASE_URL}/get-interpretation`,
+         `${process.env.REACT_APP_API_BASE_URL}/api/get-interpretation`,
         {
           dob,
           time,
